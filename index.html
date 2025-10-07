@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="个人技术博客，分享前端、后端、DevOps 等技术文章与实践经验。">
+    <title>我的技术博客</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <a class="skip-link" href="#main">跳到主要内容</a>
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <a href="index.html">技术博客</a>
+            </div>
+            <nav aria-label="主导航">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="about.html">关于我</a></li>
+                    <li><a href="archives.html">归档</a></li>
+                    <li><a href="contact.html">联系</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main" class="container main-content" role="main">
+        <section class="posts">
+            <article class="post">
+                <h2 class="post-title"><a href="post1.html">理解JavaScript闭包：从原理到实践</a></h2>
+                <div class="post-meta">
+                    <time datetime="2023-10-15">发布于 2023年10月15日</time> • 
+                    <span>分类: <a href="#">JavaScript</a></span> • 
+                    <span>阅读时间: 5分钟</span>
+                </div>
+                <div class="post-excerpt">
+                    <p>闭包是JavaScript中一个重要且强大的概念。简单来说，闭包是指有权访问另一个函数作用域中变量的函数。创建闭包的常见方式是在一个函数内部创建另一个函数...</p>
+                </div>
+                <a href="post1.html" class="read-more">继续阅读</a>
+            </article>
+
+            <article class="post">
+                <h2 class="post-title"><a href="post2.html">CSS Grid布局完全指南</a></h2>
+                <div class="post-meta">
+                    <time datetime="2023-10-10">发布于 2023年10月10日</time> • 
+                    <span>分类: <a href="#">CSS</a></span> • 
+                    <span>阅读时间: 7分钟</span>
+                </div>
+                <div class="post-excerpt">
+                    <p>CSS Grid布局是CSS中功能最强大的布局系统。与Flexbox的一维布局系统不同，Grid是一个二维布局系统，可以同时处理行和列...</p>
+                </div>
+                <a href="post2.html" class="read-more">继续阅读</a>
+            </article>
+
+            <article class="post">
+                <h2 class="post-title"><a href="post3.html">GitHub Actions自动化部署指南</a></h2>
+                <div class="post-meta">
+                    <time datetime="2023-10-05">发布于 2023年10月05日</time> • 
+                    <span>分类: <a href="#">DevOps</a></span> • 
+                    <span>阅读时间: 6分钟</span>
+                </div>
+                <div class="post-excerpt">
+                    <p>GitHub Actions是GitHub提供的持续集成和持续交付(CI/CD)平台，允许您自动化构建、测试和部署流程...</p>
+                </div>
+                <a href="post3.html" class="read-more">继续阅读</a>
+            </article>
+        </section>
+
+        <aside class="sidebar" aria-labelledby="about-title">
+            <div class="sidebar-widget about-me">
+                <h3 id="about-title" class="widget-title">关于我</h3>
+                <img src="https://via.placeholder.com/100" alt="我的头像" width="100" height="100" loading="lazy">
+                <p>一名热爱技术的全栈开发者，专注于Web开发和云计算。喜欢分享学习经验和编程技巧。</p>
+            </div>
+
+            <div class="sidebar-widget categories">
+                <h3 class="widget-title">分类</h3>
+                <ul>
+                    <li><a href="#">JavaScript</a> (12)</li>
+                    <li><a href="#">CSS</a> (8)</li>
+                    <li><a href="#">HTML</a> (5)</li>
+                    <li><a href="#">DevOps</a> (7)</li>
+                    <li><a href="#">后端开发</a> (9)</li>
+                </ul>
+            </div>
+
+            <div class="sidebar-widget tags">
+                <h3 class="widget-title">标签</h3>
+                <ul>
+                    <li><a href="#">前端</a></li>
+                    <li><a href="#">React</a></li>
+                    <li><a href="#">Vue</a></li>
+                    <li><a href="#">Node.js</a></li>
+                    <li><a href="#">Docker</a></li>
+                    <li><a href="#">Git</a></li>
+                    <li><a href="#">算法</a></li>
+                    <li><a href="#">性能优化</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="social-links" aria-label="社交链接">
+                <a href="#" rel="noopener">GitHub</a>
+                <a href="#" rel="noopener">Twitter</a>
+                <a href="#" rel="noopener">LinkedIn</a>
+                <a href="#" rel="noopener">Email</a>
+            </div>
+            <p>&copy; <span id="year">2025</span> 我的技术博客. 保留所有权利.</p>
+        </div>
+    </footer>
+
+    <script>
+        // 简单脚本：自动更新版权年份（可选）
+        (function(){ const y = new Date().getFullYear(); document.getElementById('year').textContent = y; })();
+    </script>
+</body>
+</html>
